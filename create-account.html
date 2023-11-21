@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Login Account</title>
+  </head>
+
+  <body class="create-account">
+    <a href="LoginPage.html"> <!--------CHANGE THIS TO LANDING PAGE URL----------->>
+    <div class="media">
+      <img class="mr-3" src="img/wisdom2copy.png" alt="Generic placeholder image"></a>
+      <div class="media-body">
+      </div>
+    </div>
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-6 m-auto">
+    <div class="wrapper">
+                <form action="LoginPage.html">
+                    <div class="input-box">
+                        <input type="text" placeholder="School Name"required id="school" name="school">
+                        <i class="fas fa-school"></i>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Juan Dela Cruz"required id="name" name="name">
+                    <i class="fas fa-user"></i>
+
+                    <div class="input-box">
+                    <input type="text" placeholder="JuanDelaCruz@email.com" id="Email" name="email">
+                      <i class="fas fa-envelope"></i>
+
+                      <div class="input-box">
+                        <input type="text" placeholder="Juan.Delacruz" id="user" name="user">
+                        <i class="fa-regular fa-user"></i>
+
+                          <div class="input-box">
+                            <input type="tel" placeholder="Contact Number" id="phone" name="phone">
+                              <i class="fas fa-phone"></i>
+                          </div>
+
+
+          <!------------------------------------SELECT PROVINCE---------------------------------------->
+                    <div class="row mb-3">
+                         <div class="col-sm-6 mb-3 mb-sm-0" id="province">
+                          <select id="provinceDropdown" name="province" onchange="populateCities()" class="form-select" required>  
+                            <option value="" disabled selected>Select a Province</option>
+                            <option value="abra">Abra</option>
+                            <option value="agusandelnorte">Agusan del Norte</option>
+                            <option value="agusandelsur">Agusan del Sur</option>
+                            <option value="aklan">Aklan</option>
+                            <option value="albay">Albay</option>
+                            <option value="antique">Antique</option>
+                            <option value="apayao">Apayao</option>
+                            <option value="aurora">Aurora</option>
+                            <option value="basilan">Basilan</option>
+                            <option value="bataan">Bataan</option>
+                            <option value="batanes">Batanes</option>
+                            <option value="batangas">Batangas</option>
+                            <option value="benguet">Benguet</option>
+                            <option value="biliran">Biliran</option>
+                            <option value="bohol">Bohol</option>
+                            <option value="bukidnon">Bukidnon</option>
+                            <option value="bulacan">Bulacan</option>
+                            <option value="cagayan">Cagayan</option>
+                            <option value="camarinesnorte">Camarines Norte</option>
+                            <option value="camarinessur">Camarines Sur</option>
+                            <option value="camiguin">Camiguin</option>
+                            <option value="capiz">Capiz</option>
+                            <option value="catanduanes">Catanduanes</option>
+                            <option value="cavite">Cavite</option>
+                            <option value="cebu">Cebu</option>
+                            <option value="cotabato">Cotabato</option>
+                            <option value="davaodeoro">Davao de Oro</option>
+                            <option value="davaodelnorte">Davao del Norte</option>
+                            <option value="davaodelsur">Davao del Sur</option>
+                            <option value="davaooccidental">Davao Occidental</option>
+                            <option value="davaooriental">Davao Oriental</option>
+                            <option value="dinagatislands">Dinagat Islands</option>
+                            <option value="easternsamar">Eastern Samar</option>
+                            <option value="guimaras">Guimaras</option>
+                            <option value="ifugao">Ifugao</option>
+                            <option value="ilocosnorte">Ilocos Norte</option>
+                            <option value="ilocossur">Ilocos Sur</option>
+                            <option value="iloilo">Iloilo</option>
+                            <option value="isabela">Isabela</option>
+                            <option value="kalinga">Kalinga</option>
+                            <option value="launion">La Union</option>
+                            <option value="laguna">Laguna</option>
+                            <option value="lanaodelnorte">Lanao del Norte</option>
+                            <option value="lanaodelsur">Lanao del Sur</option>
+                            <option value="leyte">Leyte</option>
+                            <option value="maguindanaodelnorte">Maguindanao del Norte</option>
+                            <option value="maguindanaodelsur">Maguindanao del Sur</option>
+                            <option value="marinduque">Marinduque</option>
+                            <option value="masbate">Masbate</option>
+                            <option value="metromanila">Metro Manila</option>
+                            <option value="misamisoccidental">Misamis Occidental</option>
+                            <option value="misamisoriental">Misamis Oriental</option>
+                            <option value="mountainprovince">Mountain Province</option>
+                            <option value="negrosoccidental">Negros Occidental</option>
+                            <option value="negrosoriental">Negros Oriental</option>
+                            <option value="northernsamar">Northern Samar</option>
+                            <option value="nuevaecija">Nueva Ecija</option>
+                            <option value="nuevavizcaya">Nueva Vizcaya</option>
+                            <option value="occidentalmindoro">Occidental Mindoro</option>
+                            <option value="orientalmindoro">Oriental Mindoro</option>
+                            <option value="palawan">Palawan</option>
+                            <option value="pampanga">Pampanga</option>
+                            <option value="pangasinan">Pangasinan</option>
+                            <option value="quezon">Quezon</option>
+                            <option value="quirino">Quirino</option>
+                            <option value="rizal">Rizal</option>
+                            <option value="romblon">Romblon</option>
+                            <option value="samar">Samar</option>
+                            <option value="sarangani">Sarangani</option>
+                            <option value="siquijor">Siquijor</option>
+                            <option value="sorsogon">Sorsogon</option>
+                            <option value="southcotabato">South Cotabato</option>
+                            <option value="southernleyte">Southern Leyte</option>
+                            <option value="sultankuldarat">Sultan Kuldarat</option>
+                            <option value="sulu">Sulu</option>
+                            <option value="surigaodelnorte">Surigao del Norte</option>
+                            <option value="surigaodelsur">Surigao del Sur</option>
+                            <option value="tarlac">Tarlac</option>
+                            <option value="tawitawi">Tawi-Tawi</option>
+                            <option value="zambales">Zambales</option>
+                            <option value="zamboangadelnorte">Zamboanga del Norte</option>
+                            <option value="zamboangadelsur">Zamboanga del Sur</option>
+                            <option value="zamboangasibugay">Zamboanga Sibugay</option>
+                        </select>
+                    </div>
+           <!------------------------------------SELECT CITY---------------------------------------->
+           <div class="col-sm-6" id="city">
+            <select id="cityDropdown" name="city" class="form-select"required>
+            <option value="" disabled selected>Select a City</option>
+              </select></div>
+                    </div>
+                  
+                    <script>
+                      function populateCities() {
+                          const selectedProvince = document.getElementById('provinceDropdown').value;
+
+                          const cityDropdown = document.getElementById('cityDropdown');
+                  
+                          cityDropdown.innerHTML = '<option value="">Select City</option>';
+                  
+
+                          const cities = {
+                              abra: ['Bangued', 'Boliney', 'Bucay', 'Bucloc', 'Daguioman', 'Danglas', 'Dolores', 'La Paz', 'Lacub', 'Lagangilang', 'Lagayan', 'Langiden', 'Licuan-Baay', 'Luba', 'Malibcong', 'Manabo', 'Peñarubia', 'Pidigan', 'Pilar', 'Sallapadan', 'San Isidro', 'San Juan', 'San Quintin', 'Tayum', 'Timer', 'Tubog', 'Villaviciosa'],
+                              agusandelnorte: ['Buenavista', 'Butuan City', 'Cabadbaran City', 'Buenavista', 'Butuan City', 'Cabadbaran City', 'Carmen', 'Jabonga', 'Kitcharao', 'Las Nieves', 'Magallanes', 'Nasipit', 'Remedios T. Romualdez', 'Santiago', 'Tubay'],
+                              agusandelsur: ['Bayugan City', 'Bunawan', 'Esperanza', 'La Paz', 'Loreto', 'Prosperidad', 'Rosario', 'San Francisco', 'San Luis', 'Santa Josefa', 'Sibagat', 'Talacogon', 'Trento', 'Veruela'],
+                              aklan: ['Altavas Balete', 'Banga', 'Batan', 'Buruanga', 'Ibajay', 'Kalibo', 'Lezo', 'Libacao', 'Madalag', 'Makato', 'Malay', 'Malinao', 'Nabas', 'New Washington', 'Numancia', 'Tangalan'],
+                              albay: ['Bacacay', 'Camalig', 'Daraga', 'Guinobatan', 'Jovellar','Legazpi City', 'Libon', 'Ligao', 'Malilipot', 'Malinao', 'Manito', 'Oas', 'Pio Duran', 'Polangui', 'Rapu-Rapu', 'Santo Domingo', 'Tabaco City', 'Tiwi'],
+                              antique: ['Anini-y', 'Barbaza', 'Belison',, 'Bugasong', 'Caluya', 'Culasi', 'Hamtic', 'Laua-an', 'Libertad', 'Pandan', 'Patnongon', 'San Jose de Buenavista', 'San Remigio', 'Sebaste', 'Sibalom', 'Tibiao', 'Tobias Fornier' , 'Valderrama'],
+                              apayao: ['Calanasan', 'Conner', 'Flora', 'Kabugao', 'Luna', 'Pudtol', 'Santa Marcela'],
+                              aurora: ['Baler', 'CasiguranDilasag', 'Dinalungan', 'Dingalan', 'Dipaculao', 'Maria Aurora', 'San Luis'],
+                              basilan: ['AkbarAl-Barka', 'Hadji Mohammad Ajul', 'Hadji Muhtamad', 'Isabela City', 'Lamitan City', 'Lantawan', 'Maluso', 'Sumisip', 'Tabuan-Lasa', 'Tipo-Tipo', 'Tuburan', 'Ungkaya', 'Pukan'],
+                              bataan: ['Abucay', 'Bagac', 'Balanga', 'Dinalupihan', 'Hermosa', 'Limay', 'Mariveles', 'Morong', 'Orani', 'Pilar','Samal'],
+                              batanes: ['Basco', 'Itbayat', 'Ivana', 'Mahatao', 'Sabtang', 'Uyugan'],
+                              batangas: ['Agoncillo', 'Alitagtag', 'Balayan', 'Balete', 'Batangas City', 'Bauan', 'Calaca', 'Calatagan', 'Cuenca', 'Ibaan', 'Laurel', 'Lemery', 'Lian', 'Lipa', 'Lobo', 'Mabini', 'Malvar', 'Mataasnakahoy', 'Nasugbu', 'Padre Garcia' , 'Rosario', 'San Jose', 'San Juan', 'San Luis', 'San Nicolas', 'San Pascual', 'Santa Teresita' , 'Santo Tomas' , 'Taal', 'Talisay','Tanauan', 'Taysan', 'Tingloy', 'Tuy'],
+                              benguet: ['Adaoay', 'Ambuklao', 'Ampusongan', 'Atok', 'Baguio', 'Balakbak', 'Bokod', 'Buguias', 'Daclan', 'Galiano'],
+                              biliran: ['Almeria', 'Biliran', 'Cabucgayan', 'Caibiran', 'Culaba', 'Kawayan', 'Maripipi', 'Naval'],
+                              bohol: ['Alburquerque', 'Antequera',, 'Baclayon', 'Balilihan', 'Calape', 'Catigbian', 'Corella', 'Cortes', 'Dauis', 'Loon', 'Maribojoc', 'Panglao', 'Sikatuna', 'Tagbilaran', 'Tubigon', 'Bien Unido', 'Buenavista', 'Clarin', 'Dagohoy', 'Danao', 'Getafe', 'Inabanga', 'President Carlos P. Garcia', 'Sagbayan', 'San Isidro', 'Talibon', 'Trinidad', 'Ubay', 'Alicia', 'Anda', 'Batuan', 'Bilar', 'Candijay', 'Carmen', 'Dimiao', 'Duero', 'Garcia Hernandez', 'Guindulman', 'Jagna', 'Sevilla', 'Lila', 'Loay', 'Loboc', 'Mabini', 'Pilar', 'Sierra Bullones', 'Valencia'],
+                              bukidnon: ['Baungon', 'Cabanglasan', 'Damulog', 'Dangcagan', 'Don Carlos', 'Impasugong', 'Kadingilan', 'Kalilangan', 'Kibawe', 'Kitaotao', 'Lantapan', 'Libona', 'Malaybalay', 'Malitbog', 'Manolo Fortich', 'Maramag', 'Pangantucan', 'Quezon', 'San Fernando', 'Sumilao', 'Talakag', 'Valencia City'],
+                              bulacan: ['Angat', 'Balagtas', 'Baliwag', 'Bocaue', 'Bulakan', 'Bustos', 'Calumpit', 'Doña Remedios Trinidad', 'Guiguinto', 'Hagonoy', 'Malolos', 'Marilao', 'Meycauayan', 'Norzagaray', 'Obando', 'Pandi', 'Paombong', 'Plaridel', 'Pulilan', 'San Ildefonso', 'San Jose del Monte City', 'San Miguel', 'San Rafael', 'Santa Maria'],
+                              cagayan: ['Abulug', 'Alcala', 'Allacapan', 'Amulung', 'Aparri', 'Baggao', 'Ballesteros', 'Buguey', 'Calayan', 'Camalaniugan', 'Claveria', 'Enrile', 'Gattaran', 'Gonzaga', 'Iguig', 'Lal-lo', 'Lasam', 'Pamplona', 'Peñablanca', 'Piat', 'Rizal', 'Sanchez-Mira' , 'Santa Ana', 'Santa Praxedes', 'Santa Teresita' , 'Santo Niño', 'Solana' , 'Tuao', 'Tuguegarao City'],
+                              camarinesnorte: ['Basud','Capalonga', 'Daet', 'Jose Panganiban', 'Labo', 'Mercedes', 'Paracale', 'San Lorenzo Ruiz', 'San Vicente', 'Santa Elena', 'Talisay', 'Vinzons'],
+                              camarinessur: ['Baao', 'Balatan', 'Bato', 'Bombon', 'Buhi', 'Bula', 'Cabusao', 'Calabanga', 'Camaligan', 'Canaman', 'Del Gallego', 'Gainza', 'Garchitorena', 'Goa', 'Iriga City', 'Lagonoy', 'Libmanan', 'Lupi', 'Magarao', 'Milaor', 'Minalabac', 'Nabua', 'Naga','Ocampo', 'Pamplona', 'Pasacao', 'Pili', 'Presentacion', 'Ragay', 'Sagñay', 'San Fernando', 'San Jose', 'Sipocot', 'Siruma', 'Tigaon', 'Tinambac'],
+                              camiguin: ['Catarman', 'Guinsiliban', 'Mahinog', 'Mambajao', 'Sagay'],
+                              capiz: ['Cuartero', 'Dao', 'Dumalag', 'Dumarao', 'Ivisan', 'Jamindan', 'Maayon', 'Mambusao', 'Panay', 'Panitan', 'Pilar', 'Pontevedra', 'President Roxas', 'Roxas City', 'Sapian' , 'Sigma', 'Tapaz'],
+                              catanduanes: ['Bagamanoc', 'Baras', 'Bato', 'Caramoran', 'Gigmoto', 'Pandan', 'Panganiban', 'San Andres', 'San Miguel', 'Viga', 'Vira'],
+                              cavite: ['Alfonso', 'Amadeo', 'Bacoor','Carmona', 'Cavite City', 'Dasmariñas', 'General Emilio Aguinaldo', 'General Mariano Alvarez', 'General Trias', 'Imus', 'Indang', 'Kawit', 'Magallanes', 'Maragondon', 'Mendez', 'Naic', 'Noveleta', 'Rosario', 'Silang', 'Tagaytay', 'Tanza', 'Ternate', 'Trece Martires'],
+                              cebu: ['Alcantara', 'Alcoy', 'Alegria', 'Aloguinsan', 'Argao', 'Asturias', 'Badian', 'Balamban', 'Bantayan', 'Barili', 'Bogo City', 'Boljoon', 'Borbon', 'Carcar City', 'Carmen', 'Catmon', 'Cebu City', 'Compostela', 'Consolacion', 'Cordova', 'Daanbantayan', 'Dalaguete', 'Danao City', 'Dumanjug', 'Ginatilan', 'Lapu-Lapu City', 'Liloan', 'Madridejos', 'Malabuyoc', 'Mandaue', 'Medellin', 'Minglanilla', 'Moalboal', 'Naga City', 'Oslob', 'Pilar'  ,'Pinamungajan', 'Poro', 'Ronda', 'Samboan', 'San Fernando', 'San Francisco', 'San Remigio', 'Santa Fe', 'Santander', 'Sibonga', 'Sogod', 'Tabogon', 'Tabuelan', 'Talisay', 'Toledo City', 'Tuburan', 'Tudela'],
+                              cotabato: ['Alamada', 'Aleosan', 'Antipas', 'Arakan', 'Banisilan', 'Carmen', 'Kabacan', 'Kidapawan City', 'Libungan', 'M’lang', 'Magpet', 'Makilala', 'Matalam', 'Midsayap', 'Pigcawayan', 'Pikit', 'President Roxas', 'Tulunan'],
+                              davaodeoro: ['Compostela', 'Laak', 'Mabini', 'Maco', 'Maragusan', 'Mawab', 'Monkayo', 'Montevista', 'Nabunturan', 'New Bataan', 'Pantukan'],
+                              davaodelnorte: ['Asuncion', 'Braulio E. Dujali', 'Carmen', 'Kapalong', 'New Corella', 'Panabo', 'Samal', 'San Isidro', 'Santo Tomas', 'Tagum', 'Talaingod'],
+                              davaodelsur: ['Bansalan', 'Davao City', 'Digos City', 'Hagonoy', 'Kiblawan', 'Magsaysay', 'Malalag', 'Matanao', 'Parada', 'Santa Cruz', 'Sulop'],
+                              davaooccidental: ['Don Marcelino', 'Jose Abad Santos', 'Malita' , 'Santa Maria', 'Sarangani'],
+                              davaooriental: ['Banganga', 'Banaybanay', 'Boston', 'Caraga', 'Cateel', 'Governor Generoso', 'Lupon', 'Manay', 'Mati', 'San Isidro', 'Tarragona'],
+                              dinagatislands: ['Basilisa', 'Cagdianao', 'Dinagat', 'Libjo', 'Loreto' , 'San Jose', 'Tubajon'],
+                              easternsamar: ['Arteche', 'Balangiga', 'Balangkayan', 'Borongan City', 'Can-avid', 'Dolores', 'General MacArthur', 'Giporlos', 'Guiuan' , 'Hernani','Jipapad', 'Lawaan', 'Llorente', 'Maslog', 'Maydolong', 'Mercedes', 'Oras', 'Quinapondan', 'Salcedo', 'San Julian', 'San Policarpo', 'Sulat', 'Taft'],
+                              guimaras: ['Buenavista', 'Jordan', 'Nueva Valencia', 'San Lorenzo', 'Sibunag'],
+                              ifugao: ['Aguinaldo', 'Alfonso', 'Lista', 'Asipulo', 'Banaue', 'Hingyon', 'Hungduan', 'Kiangan', 'Lagawe', 'Lamut', 'Mayoyao', 'Tinoc'],
+                              ilocosnorte: ['Adams', 'Bacarra', 'Badoc', 'Bangui', 'Banna', 'Batac', 'Burgos', 'Carasi', 'Currimao', 'Dingras', 'Laoag City', 'Marcos' , 'Nueva Era', 'Pagudpud', 'Paoay', 'Pasuquin', 'Piddig', 'Pinili', 'San Nicolas', 'Sarrat', 'Solsona', 'Vintar'],
+                              ilocossur: ['Alilem',, 'Banayoyo', 'Bantay', 'Burgos', 'Cabugao', 'Candon', 'Caoayan', 'Cervantes', 'Galimuyod', 'Gregorio del Pilar', 'Lidlidda', 'Magsingal', 'Nagbukel', 'Narvacan', 'Quirino', 'Salcedo', 'San Emilio', 'San Esteban','San Ildefonso', 'San Juan', 'San Vicente', 'Santa', 'Santa Catalina', 'Santa Cruz', 'Santa Lucia', 'Santa Maria', 'Santiago', 'Santo Domingo', 'Sigay', 'Sinait', 'Sugpon', 'Suyo', 'Tagudin', 'Vigan City'],
+                              iloilo: ['Ajuy','Alimodian','Anilao', 'Badiangan', 'Balasan', 'Banate', 'Barotac Nuevo', 'Barotac Viejo', 'Batad', 'Bingawan', 'Cabatuan', 'Calinog', 'Carles', 'Concepcion', 'Dingle', 'Dueñas', 'Dumangas', 'Estancia', 'Guimbal', 'Igbaras', 'Iloilo City', 'Janiuay', 'Lambunao', 'Leganes', 'Lemery', 'Leon', 'Maasin', 'Miagao', 'Mina', 'New Lucena', 'Oton', 'Passi City', 'Pavia', 'Pototan', 'San Dionisio', 'San Enrique', 'San Joaquin', 'San Miguel', 'San Rafael', 'Santa Barbara', 'Sara', 'Tigbauan', 'Tubungan', 'Zarraga'],
+                              isabela: ['Alicia', 'Angadanan', 'Aurora', 'Benito Soliven', 'Burgos', 'Cabagan', 'Cabatuan', 'Cauayan City', 'Cordon', 'Delfin Albano', 'Dinapigue', 'Divilacan', 'Echague', 'Gamu', 'Ilagan', 'Jones', 'Luna', 'Maconacon', 'Malig', 'Naguilian', 'Palanan', 'Quezon', 'Quirino', 'Ramon', 'Reina Mercedes', 'Roxas' , 'San Agustin', 'San Guillermo', 'San Isidro', 'San Manuel', 'San Mariano', 'San Mateo', 'San Pablo', 'Santa Maria', 'Santiago City', 'Santo Tomas', 'Tumauini'],
+                              kalinga: ['Balbalan', 'Lubuagan', 'Pasil', 'Pinukpuk', 'Rizal', 'Tabuk', 'Tanudan', 'Tinglayan'],
+                              launion: ['Agoo',, 'Aringay', 'Bacnotan', 'Bagulin', 'Balaoan', 'Bangar', 'Bauang', 'Burgos', 'Caba', 'Luna', 'Naguilian', 'Pugo', 'Rosario', 'San Fernando', 'San Gabriel', 'San Juan', 'Santo Tomas', 'Santol', 'Supiden', 'Tubao'],
+                              laguna: ['Alaminos', 'Bay', 'Biñan', 'Cabuyao', 'Calamba', 'Calauan', 'Cavinti', 'Famy', 'Kalayaan', 'Liliw', 'Los Baños' , 'Luisiana' ,'Lumban', 'Mabitac', 'Magdalena', 'Majayjay', 'Nagcarlan', 'Paete', 'Pagsanjan', 'Pakil', 'Pangil', 'Pila', 'Rizal', 'San Pablo City', 'San Pedro', 'Santa Cruz', 'Santa Maria', 'Santa Rosa' , 'Siniloan', 'Victoria'],
+                              lanaodelnorte: ['Bacolod', 'Baloi', 'Baroy', 'Iligan City', 'Kapatagan', 'Kauswagan', 'Kolambugan', 'Lala', 'Linamon', 'Magsaysay', 'Maigo', 'Matungao', 'Munai', 'Nunungan', 'Pantao Ragat', 'Pantar', 'Poona Piagapo', 'Salvador', 'Sapad', 'Sultan Naga Dimaporo', 'Tagoloan', 'Tangcal', 'Tubod'],
+                              lanaodelsur: ['Amai Manabilang', 'Bacolod-Kalawi', 'Balabagan', 'Balindong', 'Bayang', 'Binidayan','Buadiposo-Buntong', 'Bubong', 'Butig', 'Calanogas', 'Ditsaan Ramain', 'Ganassi', 'Kapai', 'Kapatagan', 'Lumba-Bayabao', 'Lumbaca-Unayan', 'Lumbatan', 'Lumbayanague', 'Madulum', 'Madamba', 'Maguing', 'Malabang', 'Marantao', 'Marawi City', 'Marogong', 'Masiu', 'Mulondo', 'Pagayawan', 'Piagapo', 'Picong', 'Poona Bayabao', 'Pualas', 'Saguiaran', 'Sultan Dumalondong', 'Tagaloan', 'Tamparan', 'Taraka', 'Tubaran', 'Tugaya', 'Wao'],
+                              leyte: ['Abuyog', 'Alangalang', 'Babatngon', 'Barugo', 'Bato', 'Baybay City', 'Burauen', 'Calubian', 'Capoocan', 'Carigara' , 'Dagami', 'Dulag', 'Hilongos', 'Inopacan', 'Isabel', 'Jaro', 'Javier', 'Julita', 'Kananga', 'La Paz', 'Leyte', 'MacArthur', 'Mahaplag', 'Matag-ob', 'Matalom', 'Mayorga', 'Merida', 'Ormoc', 'Palo', 'Palompon', 'Pastrana', 'San Isidro', 'San Miguel', 'Santa Fe', 'Tabango', 'Tabontabon', 'Tacloban', 'Tanauan', 'Tolosa', 'Tunga', 'Villaba'],
+                              maguindanaodelnorte: ['Barira', 'Buldon', 'Cotabato City', 'Datu Blah T. Sinsuat', 'Kabuntalan', 'Matanog', 'Northern Kabuntalan', 'Parang', 'Sultan Kudarat', 'Sultan Mastura', 'Talitay', 'Upi'],
+                              maguindanaodelsur: ['Ampatuan', 'Buluan', 'Datu Abdullah Sangki', 'Datu Anggal Midtimbang', 'Datu Hoffer Ampatuan', 'Datu Montawal', 'Datu Paglas' , 'Datu Piang' , 'Datu Salibo', 'Datu Saudi-Ampatuan', 'Datu Unsay', 'General Salipada K. Pendatun', 'Guindulungan', 'Mamasapano', 'Mangudadatu', 'Pagalungan', 'Paglat', 'Pandag', 'Rajah Buayan', 'Shariff Aguak', 'Shariff Saydona Mustapha', 'South Upi', 'Sultan sa Barongis', 'Talayan'],
+                              marinduque: ['Boac', 'Buenavista', 'Gasan', 'Mogpog', 'Santa Cruz', 'Torrijos'],
+                              masbate: ['Aroroy', 'Baleno', 'Balud', 'Batuan', 'Cataingan', 'Cawayan', 'Claveria', 'Dimasalang', 'Esperanza' , 'Mandaon', 'Masbate City', 'Milagros', 'Mobo', 'Monreal', 'Palanas', 'Pio V. Corpus', 'Placer', 'San Fernando', 'San Jacinto', 'San Pascual', 'Uson'],
+                              metromanila: ['Caloocan', 'Las Piñas', 'Makati', 'Malabon', 'Mandaluyong', 'Manila', 'Marikina', 'Muntinlupa' , 'Navotas', 'Parañaque', 'Pasay', 'Pasig', 'Pateros', 'Quezon City', 'San Juan', 'Taguig' , 'Valenzuela'],                              
+                              misamisoccidental: ['Aloran', 'Baliangao', 'Bonifacio', 'Calamba', 'Clarin', 'Concepcion', 'Clarin', 'Concepcion', 'Don Victoriano Chiongbian', 'Jimenez', 'Lopez Jaena', 'Oroquieta City', 'Ozamiz City', 'Panaon', 'Plaridel', 'Sapang Dalaga', 'Sinacaban', 'Tangub City', 'Tudela'],
+                              misamisoriental: ['Alubijid', 'Balingasag', 'Balingoan', 'Binuangan', 'Cagayan de Oro', 'Claveria', 'El Salvador City', 'Gingoog', 'Gitagum', 'Initao', 'Jasaan', 'Kinoguitan', 'Lagonglong', 'Laguindingan', 'Libertad', 'Lugait', 'Magsaysay', 'Manticao', 'Medina', 'Naawan', 'Opol', 'Salay', 'Sugbongcogon', 'Tagoloan', 'Talisayan', 'Villanueva'],
+                              mountainprovince: ['Barlig', 'Bauko', 'Besao', 'Bontoc', 'Natonin', 'Paracelis', 'Sabangan', 'Sadanga', 'Sagada Tadian'],
+                              negrosoccidental: ['Bacolod', 'Bago City', 'Binalbagan', 'Cadiz City', 'Calatrava', 'Candoni', 'Cauayan', 'Don Salvador Benedicto', 'Enrique B. Magalona', 'Escalante City', 'Himalayan City', 'Hinigaran', 'Hinoba-an', 'Ilog', 'Isabela', 'Kabankalan', 'La Carlota City', 'La Castellana', 'Manapla', 'Moises Padilla', 'Murcia', 'Pontevedra', 'Pulupandan', 'Sagay City', 'San Carlos City', 'San Enrique', 'Silay City', 'Sipalay', 'Talisay City', 'Toboso', 'Valladolid', 'Victorias City'],
+                              negrosoriental: ['Amlan', 'Ayungon', 'Bacong', 'Bais City', 'Basay', 'Bayawan City', 'Bindoy', 'Canlaon City', 'Dauin', 'Dumaguete', 'Guihulngan City', 'Jimalalud', 'La Libertad', 'Mabinay', 'Manjuyod', 'Pamplona', 'San Jose', 'Santa Catalina', 'Siaton', 'Sibulan', 'Tanjay City', 'Tayasan', 'Valencia', 'Vallehermoso', 'Zamboanguita'],
+                              northernsamar: ['Allen', 'Biri', 'Bobon', 'Capul', 'Catarman', 'Catubig', 'Gamay', 'Laoang', 'Lapinig', 'Las Navas', 'Lavezares', 'Lope de Vega', 'Mapanas', 'Mondragon', 'Palapag', 'Pambujan', 'Rosario', 'San Antonio', 'San Isidro', 'San Jose', 'San Roque', 'San Vicente', 'Silvino Lobos', 'Victoria'],
+                              nuevaecija: ['Aliaga', 'Bongabon', 'Cabanatuan City', 'Cabiao', 'Carrangalan', 'Cuyapo', 'Gabaldon' , 'Gapan City', 'General Mamerto Natividad', 'General Tinio', 'Guimba', 'Jaen', 'Laur', 'Licab', 'Llanera', 'Lupao', 'Science City of Muñoz', 'Nampicuan', 'Palayan City', 'Pantabangan', 'Peñaranda', 'Quezon', 'Rizal', 'San Antonio', 'San Isidro', 'San Jose City', 'San Leonardo', 'Santa Rosa', 'Santo Domingo', 'Talavera', 'Talugtug', 'Zaragoza'],
+                              nuevavizcaya: ['Alfonso Castañeda', 'Ambaguio', 'Aritao', 'Bagabag', 'Bambang', 'Bayombong', 'Diadi', 'Dupax del Norte', 'Dupax del Sur', 'Kasibu', 'Kayapa', 'Quezon', 'Santa Fe', 'Solano', 'Villaverde'],
+                              occidentalmindoro: ['Abra de Ilog', 'Calintaan', 'Looc', 'Lubang', 'Magsaysay', 'Mamburao', 'Paluan', 'Rizal', 'Sablayan', 'San Jose' , 'Santa Cruz'],
+                              orientalmindoro: ['Baco' , 'Bansud', 'Bongabong', 'Bulalacao', 'Calapan', 'Gloria', 'Mansalay', 'Naujan', 'Pinamalayan', 'Pola', 'Puerto Galera', 'Roxas','San Teodoro', 'Socorro', 'Victoria'],
+                              palawan:['Aborlan', 'Agutaya', 'Araceli', 'Balabac', 'Bataraza', 'Brooke’s Point', 'Busuanga', 'Cagayancillo', 'Coron', 'Culion', 'Cuyo', 'Dumaran', 'El Nido','Kalayaan', 'Linapacan', 'Magsaysay', 'Narra', 'Puerto Princesa', 'Quezon', 'Rizal', 'Roxas', 'San Vicente', 'Sofronio Española', 'Taytay'], 
+                              pampanga: ['Angeles City', 'Apalit', 'Arayat', 'Bacolor', 'Candaba', 'Floridablanca', 'Guagua', 'Lubao', 'Mabalacat', 'Macabebe', 'Magalang', 'Masantol', 'Mexico', 'Minalin', 'Porac', 'San Fernando', 'San Luis', 'San Simon', 'Santa Ana', 'Santa Rita', 'Santo Tomas', 'Sasmuan'],
+                              pangasinan: ['Agno', 'Aguilar', 'Alaminos', 'Alcala'  , 'Anda', 'Asingan', 'Balungao', 'Bani', 'Basista', 'Bautista', 'Bayambang', 'Binalonan', 'Binmaley', 'Bolinao', 'Bugallon', 'Burgos', 'Calasiao', 'Dagupan', 'Dasol', 'Infanta', 'Labrador', 'Laoac', 'Lingayen', 'Mabini', 'Malasiqui', 'Manaoag', 'Mangaldan', 'Mangatarem', 'Mapandan', 'Natividad', 'Pozorrubio', 'Rosales', 'San Carlos', 'San Fabian', 'San Jacinto', 'San Manuel', 'San Nicolas', 'San Quintin', 'Santa Barbara', 'Santa Maria', 'Santo Tomas', 'Sison', 'Sual', 'Tayug', 'Umingan', 'Urbiztondo', 'Urdaneta', 'Villasis'],
+                              quezon: ['Agdangan', 'Alabat', 'Atimonan', 'Buenavista', 'Burdeos', 'Calauag', 'Candelaria', 'Catanauan', 'Dolores', 'General Luna', 'General Nakar', 'Guinayangan', 'Gumaca', 'Infanta', 'Jomalig', 'Lopez', 'Lucban', 'Lucena', 'Macalelon', 'Mauban', 'Mulanay', 'Padre Burgos', 'Pagbilao', 'Panukulan', 'Patnanungan', 'Perez','Pitogo', 'Plaridel', 'Polillo', 'Quezon', 'Real', 'Sampaloc', 'San Andres', 'San Antonio', 'San Francisco', 'Sariaya Tagkawayan', 'Tayabas', 'Tiaong', 'Unisan'],
+                              quirino: ['Aglipay', 'Cabarroguis', 'Diffun', 'Maddela' , 'Nagtipunan', 'Saguday'],
+                              rizal: ['Angono', 'Antipolo', 'Baras', 'Binangonan', 'Cainta', 'Cardona', 'Jalajala', 'Morong', 'Pililla', 'Rodriquez', 'San Mateo', 'Tanay', 'Taytay', 'Teresa'],
+                              romblon: ['Alcantara', 'Banton', 'Cajidiocan', 'Calatrava', 'Concepcion', 'Corcuera', 'Ferrol', 'Looc', 'Magdiwang', 'Odiongan', 'Romblon', 'San Agustin', 'San Andres', 'San Fernando', 'San Jose', 'Santa Fe', 'Santa Maria'],
+                              samar: ['Almagro', 'Basey', 'Calbayog City', 'Calbiga', 'Catbalogan City', 'Daram', 'Gandara', 'Hinabangan', 'Jiabong', 'Marabut','Matuguinao', 'Motiong', 'Pagsanghan', 'Paranas', 'Pinabacdao', 'San Jorge', 'San Jose de Buan', 'San Sebastian', 'Santa Margarita', 'Santa Rita', 'Santo Niño', 'Tagapul-an', 'Talalora', 'Tarangnan', 'Villareal', 'Zumarraga'],
+                              sarangani: ['Alabel', 'Glan', 'Kiamba', 'Maasim', 'Maitum', 'Malapatan', 'Malungon'],
+                              siquijor: ['Enrique Villanueva', 'Larena' , 'Lazi', 'Maria', 'San Juan', 'Siquijor'],
+                              sorsogon: ['Barcelona', 'Bulan', 'Bulusan', 'Casiguran', 'Castilla', 'Donsol', 'Gubat', 'Irosin', 'Juban', 'Magallanes', 'Matnog', 'Pilar', 'Prieto Diaz', 'Santa Magdalena', 'Sorsogon City'],
+                              southcotabato: ['Banga', 'General Santos City', 'Koronadal City', 'Lake Sebu', 'Norala', 'Polomolok', 'Santo Niño', 'Surallah', 'T’Boli', 'Tampakan', 'Tantangan', 'Tupi'],
+                              southernleyte: ['Anahawan', 'Bontoc', 'Hinunangan', 'Hinundayan', 'Libagon', 'Liloan', 'Maasin City', 'Macrohon', 'Malitbog', 'Padre Burgos', 'Pintuyan', 'Saint Bernard', 'San Francisco', 'San Juan', 'San Ricardo', 'Silago', 'Sogod', 'Tomas Oppus'],
+                              sultankuldarat: ['Bagumbayan', 'Columbio', 'Esperanza', 'Isulan', 'Kalamansig', 'Lambayong', 'Lebak', 'Lutayan', 'Palimbang', 'President Quirino', 'Senator Ninoy Aquino', 'Tacurong City'],
+                              sulu: ['Banguingui', 'Hadji Panglima Tahil' , 'Indanan', 'Jolo', 'Kalingalan Caluang', 'Lugus' , 'Luuk', 'Maimbung', 'Omar', 'Panamao', 'Pandami' , 'Panglima Estino', 'Pangutaran', 'Parang', 'Pata', 'Patikul', 'Siasi', 'Talipao', 'Tapul'],
+                              surigaodelnorte: ['Alegria', 'Bacuag', 'Burgos', 'Claver', 'Dapa', 'Del Carmen', 'General Luna', 'Gigaquit', 'Mainit', 'Malimono', 'Pilar', 'Placer', 'San Benito', 'San Francisco', 'San Isidro', 'Santa Monica', 'Sison', 'Socorro', 'Surigao City', 'Tagana-an', 'Tubod '],
+                              surigaodelsur: ['Barobo', 'Bayabas', 'Bislig', 'Cagwait', 'Cantilan', 'Carmen', 'Carrascal', 'Cortes', 'Hinatuan', 'Lanuza', 'Lianga', 'Lingig', 'Madrid', 'Marihatag', 'San Agustin', 'San Miguel', 'Tagbina', 'Tago' , 'Tandag'],
+                              tarlac: ['Anao', 'Bamban', 'Camiling', 'Capas', 'Concepcion', 'Gerona', 'La Paz', 'Mayantoc', 'Moncada', 'Paniqui', 'Pura', 'Ramos', 'San Clemente', 'San Jose', 'San Manuel' , 'Santa Ignacia', 'Tarlac City', 'Victoria'],
+                              tawitawi: ['Bongao', 'Languyan', 'Mapun', 'Panglima Sugala', 'Sapa-Sapa', 'Sibutu', 'Simunul', 'Sitangkai', 'South Ubian', 'Tandubas', 'Turtle Islands'],
+                              zambales: ['Botolan', 'Cabangan', 'Candelaria', 'Castillejos', 'Iba', 'Masinloc', 'Olongapo', 'Palauig', 'San Antonio', 'San Felipe', 'San Marcelino', 'San Narciso', 'Santa Cruz', 'Subic'],
+                              zamboangadelnorte: ['Baliguian', 'Dapitan City', 'Dipolog City', 'Godod', 'Gutalac', 'Jose Dalman', 'Kalawit', 'Katipunan', 'La Libertad', 'Labason', 'Leon B. Postigo', 'Liloy', 'Manukan', 'Mutia', ' Pilñan','Polanco', 'President Manuel A. Roxas', 'Rizal', 'Salug', 'Sergio Osmeña Sr.', 'Siayan', 'Sibuco', 'Sindangan', 'Siocon', 'Sirawai', 'Tampilisan'],
+                              zamboangadelsur: ['Aurora', 'Bayog', 'Dimataling', 'Dinas', 'Dumalinao', 'Dumingag', 'Guipos', 'Josefina', 'Kumaralang', 'Labangan', 'Lakewood', 'Lapuyan', 'Mahayag', 'Margosatubig', 'Midsalip', 'Molave', 'Pagadian City', 'Pitogo', 'Ramon Magsaysay', 'San Miguel', 'San Pablo', 'Sominot', 'Tabina', 'Tambulig', 'Tigbao', 'Tukuran', 'Vincenzo A. Sagun', 'Zamboanga City'],
+                              zamboangasibugay: ['Alicia', 'Buug', 'Diplahan', 'Imelda', ' Ipil','Kabasalan', 'Mabuhay', 'Malangas', 'Naga', 'Olutanga', 'Payao', 'Roseller Lim', 'Siay', 'Talusan', 'Titay', 'Tungawan'],
+                            };
+
+
+                          cities[selectedProvince].forEach(city => {
+                              const option = document.createElement('option');
+                              option.value = city;
+                              option.textContent = city;
+                              cityDropdown.appendChild(option);
+                          });
+                      }
+                  </script>
+
+
+                    <form id="passwordForm">
+                      <input type="password" placeholder="Password" id="password" name="password" required>
+                        <span class="toggle-password" id="toggle-password">
+                              <i class="fas fa-eye show-password" onclick="togglePasswordVisibility('password')"></i>
+                        </span>
+
+                      <input type="password" placeholder="Confirm Password" id="confirmPassword" name="confirmPassword" required>
+                         <span class="toggle-password" id="toggle-password">  
+                              <i class="fas fa-eye show-password" onclick="togglePasswordVisibility('confirmPassword')"></i>
+                         </span>
+
+                        </form>
+                         <!-- =============== RADIO BUTTON ===================== -->                       
+ 
+                         <div class="container">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOption" id="inlineRadioOption1" value="option1">
+                            <label class="form-check-label" for="inlineRadioOption1">Student</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOption" id="inlineRadioOption2" value="option2">
+                            <label class="form-check-label" for="inlineRadioOption2">Facilitator</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOption" id="inlineRadioOption3" value="option3">
+                            <label class="form-check-label" for="inlineRadioOption3">Faculty/Staff</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOption" id="inlineRadioOption4" value="option4">
+                            <label class="form-check-label" for="inlineRadioOption4">Admin</label>
+                          </div>
+                        </div>
+
+
+                        <!-- ========== SUBMIT BUTTON ========== -->
+                         <div class="next text-center">
+                          <button type="button"  button class="btn btn-success" onclick="validatePassword()">Submit</button>
+                      </div>
+                    
+             <script>
+                      function validatePassword() {
+                          var password = document.getElementById("password").value;
+                          var confirmPassword = document.getElementById("confirmPassword").value;
+              
+                          if (password !== confirmPassword) {
+                              alert("Password do not match!");
+                              return create-account.html;
+                          } else {
+                              alert("Registration successful!");
+                             
+                          }
+                      }
+            </script>
+                       <script>
+                        // Function to toggle password visibility
+                        function togglePasswordVisibility(fieldId) {
+                            var passwordField = document.getElementById(fieldId);
+                            var icon = document.querySelector(`#${fieldId} + div i`);
+                
+                            if (passwordField.type === "password") {
+                                passwordField.type = "text";
+                                icon.classList.remove('fa-eye');
+                                icon.classList.add('fa-eye');
+                            } else {
+                                passwordField.type = "password";
+                                icon.classList.remove('fa-eye');
+                                icon.classList.add('fa-eye');
+                            }
+                        }
+                    </script>                
+                    <hr>
+    </div>
+            </div>
+
+                    <div class="register">
+                        <div class="text-center"><a class="small" href="login-account.html">Already have an account? Login!</a></div>
+                    </div>
+                    
+                
+     </div>
+    </div>
+</div>
+</dv>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scritpt.js"></script>
+    <script src="https://kit.fontawesome.com/455c544d75.js" crossorigin="anonymous"></script>
+    <script src="create.js"></script>
+  </body>
+</html>
+
+

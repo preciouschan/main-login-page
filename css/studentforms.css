@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 0px 4px #06090c60;
+    color: black
+}
+.card-container{
+    margin: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.card-container .card{
+    border: 2px solid rgba(0, 0, 0, 0.219);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 18rem;
+    height: 100%;
+    align-items: center;
+    
+}
+.navbar{
+    position: fixed;
+    background: #bbdcf5; ;
+    width: 100%;
+    transition: 0.5s;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  
+  }
+  .navbar .container{
+    background: #bbdcf5;
+    height: 100%;
+    width: 100%;
+  }
+  .nav ul li{
+    display: inline-block;
+  }
+  .navbar .container .navbar-brand{
+   display: flex;
+   height:50px;
+   width: 50px;
+  }
+  .nav-link{
+    color: gray;
+    font-family: sans-serif;
+    margin: 5px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  .search-bar .btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    color: blue;
+    padding: 4px;
+  }
+  .search-bar .form-search{
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    color: black;
+    padding: 2px 5px 5px 2px;
+  }
+  .navbar-toggler{
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    color:  white;
+  }
+  .offcanvas-header .btn-close{
+    color: black;
+  } 
+  .offcanvas{
+    background: rgb(200, 228, 238);
+    color: black;
+    display: flex;
+  }
+  .container .nav :hover{
+    color: black;
+  }
+  .nav-link{
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+    margin: 5px;
+    font-weight: bold;
+    border: 2px solid blue;
+    border-radius: 50px;
+    background-color: blue;
+    padding: 10px 20px;
+  }
+  .search-bar .btn{
+    background: transparent;
+    outline: none;
+    border: 2px solid white;
+    color: blue;
+    padding: 4px;
+  }
+  .search-bar .form-search{
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    color: black;
+    padding: 2px 5px 5px 2px;
+  }
+  .navbar-brand img{
+    height: auto;
+    width: 150px;
+  }
+
+  /*--------download------*/
